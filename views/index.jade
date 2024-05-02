@@ -1,0 +1,16 @@
+
+extends layout
+
+block content
+  h1= title 
+  div
+    for mess in messages 
+      h2= mess.user
+      h4= mess.text
+      h6= mess.added
+  a(href='/new')
+      button#btn Add New Message
+  //script.
+  //    const volup = document.getElementById('btn');
+  //    volup.addEventListener('click', function(e) {
+  //    alert('innathu ithu work aaguthu..uuhummm')})
