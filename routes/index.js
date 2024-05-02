@@ -16,7 +16,7 @@ const messages = [
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: "Mini Messageboard", messages: messages});
+  res.render('index', { title: "Let's Chat in XBI4", messages: messages});
 });
 router.post('/new', function(req, res, next){
   messages.push({text: req.body.text, user: req.body.author, added: new Date()});
