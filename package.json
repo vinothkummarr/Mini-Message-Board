@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "build": "npm ci"
+    "devStart": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
